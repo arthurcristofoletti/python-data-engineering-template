@@ -41,8 +41,8 @@ chmod +x create_project.sh
 cd my-new-data-pipeline
 ```
 2. Activate Environment & Validate
- ```text  
-Bash
+ ```bash  
+
 # Activate the isolated virtual environment
 source .venv/bin/activate
 
