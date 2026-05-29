@@ -12,6 +12,34 @@ It eliminates environment configuration friction by automating folder structures
 - **Code Quality & Linting:** `ruff` — an ultra-fast Python linter and formatter used to enforce Clean Code, PEP 8 compliance, and catch anti-patterns early.
 - **CI/CD Platform:** GitHub Actions running automated style checks and test execution suites on every push or pull request.
 
+## 📋 Prerequisites & Local Machine Setup
+
+Before executing the automation script (`create_project.sh`), ensure your local environment meets the following engineering prerequisites:
+
+### 1. Python 3 Environment
+The script requires Python 3.11+ and `pip` installed globally on your machine.
+- **Mac (Homebrew):** `brew install python`
+- **Linux (Ubuntu/Debian):** `sudo apt update && sudo apt install python3 python3-venv python3-pip`
+
+### 2. VS Code Command Line Interface (`code`)
+To allow the script to open the project workspace automatically, ensure the `code` command is installed in your system path:
+1. Open **VS Code**.
+2. Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux, `Cmd+Shift+P` on Mac).
+3. Type and select: `Shell Command: Install 'code' command in PATH`.
+4. Restart your terminal.
+
+### 3. GitHub CLI (`gh`) Authentication
+The script relies on the official GitHub CLI to instantiate and link your remote repository securely without typing passwords.
+1. **Install GitHub CLI:**
+   - **Mac:** `brew install gh`
+   - **Windows:** `winget install GitHub.GitHubCLI`
+   - **Linux:** `sudo apt install gh`
+2. **Authenticate with your GitHub Account:**
+   Run the following command in your terminal and follow the interactive prompts:
+   ```bash
+   gh auth login
+   ```
+   
 ## 📁 Repository Structure
 
 ```bash
