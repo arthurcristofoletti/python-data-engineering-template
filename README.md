@@ -14,7 +14,7 @@ It eliminates environment configuration friction by automating folder structures
 
 ## 📁 Repository Structure
 
-```text
+```bash
 ├── .github/workflows/
 │   └── ci.yml        # CI/CD Pipeline (Ruff Linting + Pytest Execution)
 ├── .vscode/
