@@ -41,6 +41,7 @@ chmod +x create_project.sh
 cd my-new-data-pipeline
 ```
 2. Activate Environment & Validate
+ ```text  
 Bash
 # Activate the isolated virtual environment
 source .venv/bin/activate
@@ -50,6 +51,8 @@ python -m pytest
 
 # Run the core application entry point
 python src/main.py
+```
+
 🤖 Automated Quality Gates (CI/CD)
 Every time code is pushed to this repository, a GitHub Actions workflow triggers to ensure no broken code or poor style definitions enter the main trunk.
 
