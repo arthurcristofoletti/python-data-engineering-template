@@ -1,5 +1,4 @@
-# python-data-engineering-template
-A production-ready Python project boilerplate featuring automated CI/CD pipelines, Clean Code linting with Ruff, and strict testing frameworks with Pytest.
+Markdown
 # Production-Ready Python Data Engineering Template 🚀
 
 This repository serves as a highly automated boilerplate for building scalable, maintainable, and production-grade Data Engineering projects using **Python**. 
