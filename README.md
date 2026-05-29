@@ -28,7 +28,7 @@ It eliminates environment configuration friction by automating folder structures
     ├── test_app.py   # Unit tests targeting app logic
     └── test_main.py  # Integration tests targeting pipeline execution
 
-
+Markdown
 ## 🚀 Getting Started in 60 Seconds
 You can instantiate this entire environment dynamically.
 
