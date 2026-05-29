@@ -53,13 +53,13 @@ python -m pytest
 python src/main.py
 ```
 
-🤖 Automated Quality Gates (CI/CD)
+## 🤖 Automated Quality Gates (CI/CD)
 Every time code is pushed to this repository, a GitHub Actions workflow triggers to ensure no broken code or poor style definitions enter the main trunk.
 
-Linting Check (ruff check): Flags unused variables, complex logical nesting, or risky syntax architectures.
+ 1) Linting Check (ruff check): Flags unused variables, complex logical nesting, or risky syntax architectures.
 
-Formatting Enforcement (ruff format): Validates precise indentation, line-breaks, and quote uniformity.
+ 2) Formatting Enforcement (ruff format): Validates precise indentation, line-breaks, and quote uniformity.
 
-Automated Testing (pytest): Runs the full testing harness inside a clean Ubuntu runner.
+ 3) Automated Testing (pytest): Runs the full testing harness inside a clean Ubuntu runner.
 
 Maintained by Arthur Cristofoletti
