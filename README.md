@@ -27,7 +27,9 @@ It eliminates environment configuration friction by automating folder structures
     ├── __init__.py
     ├── test_app.py   # Unit tests targeting app logic
     └── test_main.py  # Integration tests targeting pipeline execution
-🚀 Getting Started in 60 Seconds
+
+
+## 🚀 Getting Started in 60 Seconds
 You can instantiate this entire environment dynamically.
 
 1. Run the Automation Setup Script
