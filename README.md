@@ -32,6 +32,7 @@ To allow the script to open the project workspace automatically, ensure the `cod
 The script relies on the official GitHub CLI to instantiate and link your remote repository securely without typing passwords.
 1. **Install GitHub CLI:**
    - **Mac:** `brew install gh`
+       To install it in Mac it will be needed to give access to some directories. The installation program will show which directiories will need to change the permission with the respective chmod command
    - **Windows:** `winget install GitHub.GitHubCLI`
    - **Linux:** `sudo apt install gh`
 2. **Authenticate with your GitHub Account:**
