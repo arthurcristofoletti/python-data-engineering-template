@@ -14,32 +14,39 @@ It eliminates environment configuration friction by automating folder structures
 
 ## 📋 Prerequisites & Local Machine Setup
 
-Before executing the automation script (`create_project.sh`), ensure your local environment meets the following engineering prerequisites:
+## 📋 Prerequisites & Local Machine Setup
 
-### 1. Python 3 Environment
+Before executing the automation script (`create_project.sh`), ensure your local environment meets the following engineering prerequisites. 
+
+### 1. Core Version Control System (`git`)
+The script initializes local version tracking using native Git commands before syncing with the cloud.
+- **Mac:** Installed by default with Xcode Command Line Tools (`xcode-select --install`).
+- **Linux:** `sudo apt install git`
+- **Windows:** Download and install from [git-scm.com](https://git-scm.com/).
+
+### 2. GitHub CLI (`gh`) & Repository Scopes
+The script utilizes the official GitHub CLI to automatically spin up a public repository on your account.
+1. **Installation:**
+   - **Mac:** `brew install gh`
+          To install it in Mac it will be needed to give access to some directories. The installation program will show which directiories will need to change the permission with the respective chmod command
+   - **Linux:** `sudo apt install gh`
+   - **Windows:** `winget install GitHub.GitHubCLI`
+2. **Authentication & Scopes (Crucial for first-time users):**
+   Run the login command in your terminal:
+   ```bash
+   gh auth login
+   ```
+### 3. Python 3 Environment
 The script requires Python 3.11+ and `pip` installed globally on your machine.
 - **Mac (Homebrew):** `brew install python`
 - **Linux (Ubuntu/Debian):** `sudo apt update && sudo apt install python3 python3-venv python3-pip`
 
-### 2. VS Code Command Line Interface (`code`)
+### 4. VS Code Command Line Interface (`code`)
 To allow the script to open the project workspace automatically, ensure the `code` command is installed in your system path:
 1. Open **VS Code**.
 2. Open the Command Palette (`Ctrl+Shift+P` on Windows/Linux, `Cmd+Shift+P` on Mac).
 3. Type and select: `Shell Command: Install 'code' command in PATH`.
 4. Restart your terminal.
-
-### 3. GitHub CLI (`gh`) Authentication
-The script relies on the official GitHub CLI to instantiate and link your remote repository securely without typing passwords.
-1. **Install GitHub CLI:**
-   - **Mac:** `brew install gh`
-       To install it in Mac it will be needed to give access to some directories. The installation program will show which directiories will need to change the permission with the respective chmod command
-   - **Windows:** `winget install GitHub.GitHubCLI`
-   - **Linux:** `sudo apt install gh`
-2. **Authenticate with your GitHub Account:**
-   Run the following command in your terminal and follow the interactive prompts:
-   ```bash
-   gh auth login
-   ```
    
 ## 📁 Repository Structure
 
