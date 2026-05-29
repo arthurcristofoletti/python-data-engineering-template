@@ -34,8 +34,8 @@ You can instantiate this entire environment dynamically.
 
 1. Run the Automation Setup Script
 Execute the custom shell script to spin up the architecture, isolate your virtual environment, pull dependencies, and format the initial codebase:
-```text
-Bash
+```bash
+
 chmod +x create_project.sh
 ./create_project.sh my-new-data-pipeline
 cd my-new-data-pipeline
